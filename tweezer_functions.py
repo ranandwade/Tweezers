@@ -1,3 +1,15 @@
+from scipy import constants
+import numpy as np
+
+
+#Constants in SI units
+eps0 = constants.epsilon_0
+m = 40.07*constants.atomic_mass
+c = constants.c
+e = constants.e
+hbar = constants.hbar
+pi = np.pi
+
 def potential(omega_tweezer,linewidths,omega_res,P_opt,beam_waists):
     '''
     Find the potential of the optical tweezers beam for
